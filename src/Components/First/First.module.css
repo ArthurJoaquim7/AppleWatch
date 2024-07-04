@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sticky {
+    height: 500vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.into {
+    position: sticky;
+    top: 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+.appleDesc {
+    width: 100%;
+    top: 50%;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.apple {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+/* === */
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #00D959;
+    padding: 100px;
+}
+
+.startImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.startDesc {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.startLeft {
+    width: 30%;
+}
+
+.startRight {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+
+.startH2 {
+    width: 300px;
+    font-size: 40px;
+    color: #1D1D1F;
+}
+
+.startH6 {
+    width: 400px;
+
+    font-size: 18px;
+    color: #6E6E73;
+}
+
+.btn {
+    background-color: #00D959;
+    color: #000;
+    font-weight: 600;
+    border: 0;
+    /* padding: 10px 20px; */
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* ULTIMA SECTION */
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    min-width: 50%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxLeft {
+    display: flex;
+    flex-direction: column;
+}
+.boxRight {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    color: #6E6E73;
+}
+
+.boxLeft,
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.boxLeft,
+h1 {
+    width: 500px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.h4 {
+    width: 350px;
+    display: flex;
+    align-items: right;
+}
+
+.redWatch {
+    width: 100%;
+}
