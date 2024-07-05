@@ -4,6 +4,7 @@ import { Header } from './Components/Header/Header'
 import { Slide } from './Components/Slide/Slide'
 import { Middle } from './Components/Middle/Middle'
 import { After } from './Components/After/After'
+import { End } from './Components/End/End'
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       <First />
       <Slide />
       <Middle />
-      <After/>
+      <After />
+      <End />
     </>
   )
 }

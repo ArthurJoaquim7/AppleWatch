@@ -1,16 +1,11 @@
 .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
 .sticky {
     height: 500vh;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .into {
@@ -37,11 +32,9 @@
 /* === */
 .start {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     border-bottom: 1px solid #00D959;
-    padding: 100px;
+    margin:0px 559px;
 }
 
 .startImages {
@@ -56,7 +49,7 @@
     width: 100%;
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .startLeft {
@@ -98,13 +91,11 @@
 /* ULTIMA SECTION */
 .last {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    margin:0px 559px;
 }
 
 .box {
-    min-width: 50%;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
@@ -127,16 +118,20 @@ p {
     font-size: 18px;
     font-weight: 500;
 }
+.p{
+    font-size: 32px;
+}
 
-.boxLeft,
-h1 {
+.h1 {
     width: 500px;
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 64px;
+    font-weight: bold;
 }
 
 .h4 {
-    width: 350px;
+    font-size: 24px;
+    width: 500px;
+    color: #6E6E73;
     display: flex;
     align-items: right;
 }

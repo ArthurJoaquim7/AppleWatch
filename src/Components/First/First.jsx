@@ -10,7 +10,7 @@ export const First = () => {
             <div className={s.sticky}>
                 <div className={s.into}>
                     <img src={apple} alt="apple" className={s.apple} />
-                    <h1 className={s.appleDesc}>Um grande passo para 2030.</h1>
+                    <h1 className={s.h1}>Um grande passo para 2030.</h1>
                 </div>
             </div>
             <section className={s.start}>
@@ -20,11 +20,11 @@ export const First = () => {
                 </div>
                 <div className={s.startDesc}>
                     <div className={s.startLeft}>
-                        <h2 className={s.startH2}>O primeiro produto Apple neutro em carbono está aqui.</h2>
+                        <h1 className={s.h1}>O primeiro produto Apple neutro em carbono está aqui.</h1>
                     </div>
                     <div className={s.startRight}>
-                        <h6 className={s.startH6}>produto Apple neutro em carbono está aqui. Com inovações constantes em materiais, energia limpa e transporte de baixa emissão de carbono, o Apple Watch está disponível em combinações de caixa e pulseira neutras em carbono.
-                        </h6>
+                        <h4 className={s.h4}>produto Apple neutro em carbono está aqui. Com inovações constantes em materiais, energia limpa e transporte de baixa emissão de carbono, o Apple Watch está disponível em combinações de caixa e pulseira neutras em carbono.
+                        </h4>
                         <button className={s.btn}>Saiba Mais</button>
                     </div>
                 </div>
@@ -33,14 +33,14 @@ export const First = () => {
             <section className={s.last}>
                 <div className={s.box}>
                     <div className={s.boxLeft}>
-                        <p>Saúde</p>
-                        <h1>Informações poderosas à vista.</h1>
+                        <p className={s.p}>Saúde</p>
+                        <h1 className={s.h1}>Informações<br/> poderosas à vista.</h1>
                     </div>
                     <div className={s.boxRight}><h4 className={s.h4}>O Apple Watch ajuda você a entender melhor sua saúde física e mental. Os dados de saúde coletados ficam protegidos e seguros. Se quiser compartilhar essas informações com pessoas próximas e familiares, o controle é seu.</h4>
                     </div>
                 </div>
-                <img src={redWatch} alt="redWatch" className={s.redWatch} />
             </section>
+            <img src={redWatch} alt="redWatch" className={s.redWatch} />
         </div>
     )
 }
