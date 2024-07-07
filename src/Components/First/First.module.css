@@ -1,24 +1,28 @@
 .container {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .sticky {
-    height: 500vh;
+    height: 300vh;
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: #000;
 }
 
 .into {
-    position: sticky;
+    position: fixed;
     top: 50%;
     height: 100vh;
 }
 
-.h1 {
+.h1Info {
     width: 100%;
     font-weight: bold;
+    color: #1D1D1F;
+    font-size: 48px;
 }
 
 .appleDesc {
@@ -29,11 +33,13 @@
 }
 
 .apple {
-    position: absolute;
-    left: 50%;
+    position: fixed;
+    top: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
 }
+
 
 /* === */
 .start {
@@ -41,6 +47,7 @@
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid #00D959;
+    z-index: 9999;
 }
 
 .startImages {
@@ -72,6 +79,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.h12023 {
+    font-size: 68px;
+    color: #fff;
 }
 
 .h1Desc {
@@ -109,7 +121,7 @@
 .last {
     display: flex;
     flex-direction: column;
-    /* padding:0 20%; */
+    z-index: 9999;
 }
 
 .box {
@@ -156,4 +168,5 @@ p {
 
 .redWatch {
     width: 100%;
+    z-index: 9999;
 }

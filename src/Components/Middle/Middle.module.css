@@ -5,6 +5,7 @@
     align-items: center;
     overflow: hidden;
     background-image: url(../img/bikes.jpg);
+    z-index: 999;
 }
 
 .box {
