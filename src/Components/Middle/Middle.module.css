@@ -8,12 +8,14 @@
 }
 
 .box {
-    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
     display: flex;
     flex-direction: column;
     color: #fff;
     padding: 100px 0;
-    margin:0px 559px;
+    /* margin:0px 500px; */
 }
 
 .p {
@@ -21,8 +23,8 @@
 }
 
 .h1 {
-    font-size: 64px;
     font-weight: bold;
+    color: #fff;
 }
 
 .h4 {

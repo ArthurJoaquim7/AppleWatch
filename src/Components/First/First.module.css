@@ -6,13 +6,19 @@
 .sticky {
     height: 500vh;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .into {
     position: sticky;
     top: 50%;
-    width: 100%;
     height: 100vh;
+}
+
+.h1 {
+    width: 100%;
+    font-weight: bold;
 }
 
 .appleDesc {
@@ -32,12 +38,13 @@
 /* === */
 .start {
     display: flex;
+    align-items: center;
     flex-direction: column;
     border-bottom: 1px solid #00D959;
-    margin:0px 559px;
 }
 
 .startImages {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,21 +53,32 @@
 }
 
 .startDesc {
-    width: 100%;
-    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 200px;
+    gap: 100px;
 }
 
 .startLeft {
-    width: 30%;
+    min-width: 50%;
 }
 
 .startRight {
     display: flex;
     flex-direction: column;
-    width: 30%;
     gap: 20px;
+}
+
+.h1Desc {
+    width: 500px;
+    font-weight: bold;
+    display: flex;
+    align-items: left;
 }
 
 .startH2 {
@@ -71,7 +89,6 @@
 
 .startH6 {
     width: 400px;
-
     font-size: 18px;
     color: #6E6E73;
 }
@@ -92,19 +109,25 @@
 .last {
     display: flex;
     flex-direction: column;
-    margin:0px 559px;
+    /* padding:0 20%; */
 }
 
 .box {
     padding: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
     display: flex;
     flex-direction: column;
 }
 
 .boxLeft {
     display: flex;
+    align-items: start;
+    justify-content: start;
     flex-direction: column;
 }
+
 .boxRight {
     display: flex;
     align-items: end;
@@ -118,22 +141,17 @@ p {
     font-size: 18px;
     font-weight: 500;
 }
-.p{
+
+.p {
     font-size: 32px;
 }
 
-.h1 {
-    width: 500px;
-    font-size: 64px;
-    font-weight: bold;
-}
+
 
 .h4 {
     font-size: 24px;
-    width: 500px;
+    max-width: 480px;
     color: #6E6E73;
-    display: flex;
-    align-items: right;
 }
 
 .redWatch {

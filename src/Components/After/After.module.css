@@ -1,16 +1,19 @@
 .container {
-    height: 150vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
 }
 
 .box {
+    width: 980px;
     display: flex;
     flex-direction: column;
-    margin:0px 559px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
 }
-.p{
+
+.p {
     font-size: 32px;
 }
 
@@ -18,7 +21,6 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: 64px;
     font-weight: bold;
 }
 

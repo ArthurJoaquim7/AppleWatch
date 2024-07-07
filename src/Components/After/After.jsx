@@ -8,7 +8,7 @@ export const After = () => {
         <div className={s.container}>
             <div className={s.box}>
                 <p className={s.p}>Conectividade</p>
-                <h1 className={s.h1}>Tudo na <br/>velocidade  da vida.</h1>
+                <h1 className={s.h1}>Tudo na <br />velocidade  da vida.</h1>
                 <div className={s.mid}>
                     <img src={left} alt="left" className={s.leftImg} />
                     <img src={right} alt="right" className={s.rightImg} />
