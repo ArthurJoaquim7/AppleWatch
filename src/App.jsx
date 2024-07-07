@@ -5,6 +5,7 @@ import { Slide } from './Components/Slide/Slide'
 import { Middle } from './Components/Middle/Middle'
 import { After } from './Components/After/After'
 import { End } from './Components/End/End'
+import { Footer } from './Components/Footer/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Middle />
       <After />
       <End />
+      <Footer/>
     </>
   )
 }

@@ -1,0 +1,21 @@
+.container {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F7;
+}
+
+.box{
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mais {
+    color: #0071E3;
+    text-decoration: underline;
+}

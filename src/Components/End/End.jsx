@@ -22,11 +22,12 @@ export const End = () => {
                 </div>
                 <img src={phone} alt="phone" className={s.phoneImg} />
             </section>
+            {/* -----Watches Section */}
             <h2 className={s.h22}>Qual é o Apple Watch ideal para você?</h2>
             <section className={s.watches}>
-                <div className={s.watchDiv1}>
-                    <img src={um} alt="um" className={s.umImg} />
+                <div className={s.watchDiv}>
                     <div className={s.div1Desc}>
+                        <img src={um} alt="um" className={s.umImg} />
                         <h2 className={s.h2Desc}>Apple Watch SE</h2>
                         <p className={s.descP}>Tudo que é essencial <br />ao alcance do seu pulso</p>
                     </div>
@@ -37,9 +38,9 @@ export const End = () => {
                     </div>
                 </div>
                 {/* ------ */}
-                <div className={s.watchDiv2}>
-                    <img src={dois} alt="dois" className={s.doisImg} />
+                <div className={s.watchDiv}>
                     <div className={s.div2Desc}>
+                        <img src={dois} alt="dois" className={s.doisImg} />
                         <h2 className={s.h2Desc}>Apple Watch Series 9</h2>
                         <p className={s.descP}>Sensores poderosos. <br />Recursos de saúde avançados.</p>
                     </div>
@@ -50,9 +51,9 @@ export const End = () => {
                     </div>
                 </div>
                 {/* ------ */}
-                <div className={s.watchDiv3}>
-                    <img src={tres} alt="tres" className={s.tresImg} />
+                <div className={s.watchDiv}>
                     <div className={s.div3Desc}>
+                        <img src={tres} alt="tres" className={s.tresImg} />
                         <h2 className={s.h2Desc}>Apple Watch Ultra 2</h2>
                         <p className={s.descP}>O mais forte e versátil <br />de todos.</p>
                     </div>
