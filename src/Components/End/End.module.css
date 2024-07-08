@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 999;
+    z-index: 99999999;
 }
 
 .box {
@@ -73,4 +73,57 @@
 .mais {
     color: #0071E3;
     text-decoration: underline;
+}
+
+.comp {
+    position: relative;
+}
+
+
+/* ===MOBILE */
+@media screen and (max-width: 985px) {
+    .box {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .phoneImg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .watches {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .h22 {
+        font-size: 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .h2 {
+        width: 98%;
+        font-size: 20px;
+    }
+
+    .h1Desc {
+        width: 100%;
+    }
+
+    .h4 {
+        font-size: 12px;
+    }
+
+    .p {
+        font-size: 12px;
+    }
 }

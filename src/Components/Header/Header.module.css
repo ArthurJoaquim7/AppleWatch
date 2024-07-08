@@ -33,3 +33,15 @@ a:hover {
     color: #fff;
     cursor: pointer;
 }
+
+@media screen and (max-width: 985px) {
+   ul, li, a{
+    display: none;
+   }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

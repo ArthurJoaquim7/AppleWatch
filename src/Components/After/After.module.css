@@ -2,7 +2,7 @@
     min-height: 150vh;
     display: flex;
     flex-direction: column;
-    z-index: 999;
+    z-index: 99999999;
 }
 
 .box {
@@ -34,4 +34,45 @@
 .mid {
     display: flex;
     padding: 50px 0;
+}
+
+/* ===MOBILE */
+@media screen and (max-width: 985px) {
+    .container{
+        min-height: 100vh;
+    }
+    .box {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftImg,
+    .rightImg {
+        width: 50%;
+    }
+
+    .h4 {
+        width: 90%;
+        font-size: 18px;
+        z-index: 9999999;
+    }
+
+    .p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .h4 {
+        font-size: 12px;
+    }
+
+    .p {
+        font-size: 12px;
+    }
 }

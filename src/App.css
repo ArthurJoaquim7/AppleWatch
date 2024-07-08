@@ -5,6 +5,11 @@
     font-family: 'poppins';
 }
 
+html,
+body {
+    background-color: yellow;
+}
+
 .fff {
     color: #fff;
     font-weight: bold;

@@ -8,6 +8,11 @@ import redWatch from '../img/redWatch.jpg'
 //Framer motion
 import { easeInOut, motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react';
+import { Slide } from '../Slide/Slide'
+import { Middle } from '../Middle/Middle'
+import { After } from '../After/After'
+import { End } from '../End/End'
+
 export const First = () => {
     // ZOOM AT SCROLL
     const ref = useRef();
@@ -16,9 +21,22 @@ export const First = () => {
         offset: ['start start', 'end end'],
     });
 
+    // Scale config
     const scale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.5, 15, 30, 40]);
 
     //Framer Motion Variables
+    const Apple = {
+        initial: {
+            y: 50,
+            opacity: 0,
+
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.6, easeInOut, delay: 2 }
+        }
+    }
     const view = {
         initial: {
             y: 50,
@@ -28,8 +46,9 @@ export const First = () => {
         animate: {
             y: 0,
             opacity: 1,
-            transition: { duration: 0.6, easeInOut, delay: 0.3 }
+            transition: { duration: 1, easeInOut, delay: 0.5 }
         }
+
     }
     const viewDelay = {
         initial: {
@@ -43,21 +62,116 @@ export const First = () => {
             transition: { duration: 0.6, easeInOut, delay: 0.6 }
         }
     }
+    // ZOOM TITLE
+    const zoom = {
+        initial: {
+            scale: 5,
+            opacity: 0,
+
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+            transition: { duration: 3, easeInOut, delay: 0.2, opacity: 0 }
+        }
+    }
+    const zoom2 = {
+        initial: {
+            scale: 5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+            transition: { duration: 3, easeInOut, delay: 0.6 }
+        }
+    }
+    const zoom3 = {
+        initial: {
+            scale: 5,
+            opacity: 0,
+
+        },
+        animate: {
+
+            scale: 1,
+            opacity: 1,
+            transition: { duration: 3, easeInOut, delay: 1 }
+        }
+    }
+    const zoom4 = {
+        initial: {
+            scale: 5,
+            opacity: 0,
+
+        },
+        animate: {
+
+            scale: 1,
+            opacity: 1,
+            transition: { duration: 3, easeInOut, delay: 1.4 }
+        }
+    }
+    const zoom5 = {
+        initial: {
+            scale: 5,
+            opacity: 0,
+
+        },
+        animate: {
+
+            scale: 1,
+            opacity: 1,
+            transition: { duration: 3, easeInOut, delay: 1.8 }
+        }
+    }
 
     return (
         <AnimatePresence>
-            <div className={s.container} ref={ref}>
-                <div className={s.sticky}>
-                    <div className={s.into} >
-                        <motion.img src={apple} alt="apple" className={s.apple} style={{ scale }}
-                            variants={view}
+            <div className={s.container} >
+                <div className={s.sticky} ref={ref}>
+                    <motion.div className={s.into}
+                        initial={{ opacity: 0.5 }}
+                        animate={{ opacity: 1, delay: 8 }}
+                    >
+                        <motion.img src={apple} alt="apple" className={s.apple} style={{ scale }} variants={Apple}
                             initial="initial"
                             whileInView="animate"
                             viewport={{
                                 once: true,
                             }} />
-                        <motion.h1 className={s.h12023}>Um grande passo para 2030.</motion.h1>
-                    </div>
+                        <motion.h1 className={s.h12023} variants={zoom}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{
+                                once: true,
+                            }}
+                        >Um</motion.h1>
+                        <motion.h1 className={s.h12023} variants={zoom2}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{
+                                once: true,
+                            }}>grande</motion.h1>
+                        <motion.h1 className={s.h12023} variants={zoom3}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{
+                                once: true,
+                            }}>passo</motion.h1>
+                        <motion.h1 className={s.h12023} variants={zoom4}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{
+                                once: true,
+                            }}>para</motion.h1>
+                        <motion.h1 className={s.h12023} variants={zoom5}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{
+                                once: true,
+                            }}>2030.</motion.h1>
+                    </motion.div>
                 </div>
                 <section className={s.start}>
                     <div className={s.startImages}>
@@ -118,7 +232,13 @@ export const First = () => {
                     </div>
                 </section>
                 <img src={redWatch} alt="redWatch" className={s.redWatch} />
+                {/* Componentes */}
+                <Slide />
+                <Middle />
+                <After />
+                <End />
             </div >
-        </AnimatePresence >
+        </AnimatePresence>
+
     )
 }
