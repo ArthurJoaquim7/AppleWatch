@@ -14,6 +14,7 @@ import { After } from '../After/After'
 import { End } from '../End/End'
 
 export const First = () => {
+    
     // ZOOM AT SCROLL
     const ref = useRef();
     const { scrollYProgress } = useScroll({
@@ -34,7 +35,7 @@ export const First = () => {
         animate: {
             y: 0,
             opacity: 1,
-            transition: { duration: 0.6, easeInOut, delay: 2 }
+            transition: { duration: 1.5, easeInOut, delay: 2 }
         }
     }
     const view = {
