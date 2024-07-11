@@ -6,22 +6,6 @@ import { Header } from './Components/Header/Header'
 // import { After } from './Components/After/After'
 // import { End } from './Components/End/End'
 
-// SWEET SCROLL
-import Lenis from 'lenis'
-
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
 function App() {
 
   return (

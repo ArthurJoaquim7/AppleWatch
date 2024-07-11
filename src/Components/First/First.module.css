@@ -14,7 +14,7 @@
 }
 
 .sticky {
-    height: 300vh;
+    height: 200vh;
     position: relative;
     display: flex;
     justify-content: center;

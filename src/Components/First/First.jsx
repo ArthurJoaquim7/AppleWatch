@@ -1,4 +1,5 @@
 import s from '../First/First.module.css'
+
 //IMAGES
 import logo from '../img/first.png'
 import apple from '../img/apple.png'
